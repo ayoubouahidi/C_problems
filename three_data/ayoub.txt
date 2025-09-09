@@ -1,0 +1,3 @@
+oldfd is [3]
+will be written to output.txt!
+So will this one!
