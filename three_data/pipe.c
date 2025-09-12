@@ -331,15 +331,15 @@ int    picoshell(char **cmds[])
 		if (cmds[i + 1] && pipe(fd))
 			return (1);
 		pid = fork();
-		if (pid == -1)
-		{
-			if (cmds[i + 1])
-			{
-				close(fd[0]);
-				close(fd[1]);
-			}
-			return(1);
-		}
+		// if (pid == -1)
+		// {
+		// 	if (cmds[i + 1])
+		// 	{
+		// 		close(fd[0]);
+		// 		close(fd[1]);
+		// 	}
+		// 	return(1);
+		// }
 		if (pid == 0)
 		{
 			if (prev_fd != -1)
